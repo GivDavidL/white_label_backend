@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/api", (req, res) => {
-    console.log(req.headers);
+  console.log(req.headers);
   const data = {
     brand: {
       details: {
@@ -14,9 +14,32 @@ app.get("/api", (req, res) => {
       },
       theme: [
         {
-          light: { green: "#4fbba9", blue: "#86d7ef" },
-          dark: { green: "#644d3c", blue: "#eb5b56" },
+          light: {
+            primary: "#4fbba9",
+            secondary: "#86d7ef",
+            yellow: "#f8dd6c",
+            orange: "#f08c33",
+            red: "#eb5b56",
+            grey: "#9e9e9e",
+            darkGrey: "#616161",
+          },
+          dark: {
+            primary: "#4fbba9",
+            secondary: "#86d7ef",
+            yellow: "#f8dd6c",
+            orange: "#f08c33",
+            red: "#eb5b56",
+            grey: "#9e9e9e",
+            darkGrey: "#616161",
+          },
         },
+        // mainColorGreen
+        // mainColorBlue
+        // mainColorYellow
+        // mainColorOrange
+        // mainColorRed
+        // mainColorGrey
+        // mainColorDarkGrey
       ],
       assets: {
         "what-is-space":
